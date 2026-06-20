@@ -2,6 +2,7 @@
 from listener import listen
 from jarvis_commands import process
 from speech_engine import speak
+import time
 
 def main():
 
@@ -9,9 +10,11 @@ def main():
 
     while True:
         word = listen()
+        print("Wake word heard: ", word)
 
         if word and "jarvis" in word:
             speak("Yes sir, how may I help you")
+            time.sleep(1)
 
             command = listen()
             print("Recieved command", command)

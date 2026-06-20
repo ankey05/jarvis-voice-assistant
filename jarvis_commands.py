@@ -4,6 +4,8 @@ from speech_engine import speak
 
 def process(commands):
 
+    print("Command received: ",  commands)
+
     if "open google" in commands.lower():
         speak("opening google")
         webbrowser.open("https://google.com")
