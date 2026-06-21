@@ -18,7 +18,7 @@ def process(commands):
         speak("opening spotify")
         webbrowser.open("https://spotify.com")
 
-    elif "open github" in commands.lower():
+    elif "open Github" in commands.lower():
         speak("opening github")
         webbrowser.open("https://github.com")
 
