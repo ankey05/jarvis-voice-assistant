@@ -1,7 +1,7 @@
 
-from listener import listen
-from jarvis_commands import process
-from speech_engine import speak
+from core.listener import listen
+from commands.jarvis_commands import process
+from core.speech_engine import speak
 import time
 
 def main():
